@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Baby Shop</title>
+   <link rel="stylesheet" href="index.css" />
+
+      <!--importing flickity-->
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+      />
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+      <!--importing fonts from google (instead of local)-->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+         rel="stylesheet"
+      />
+</head>
+<body>
+   <div class="site-container">
+         <div class="nav-div" id="centered">
+            <div class="intro">
+               <h1>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </h1>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="#">LOREM IPSUM 1</a></li>
+                  <p>|</p>
+                  <li><a href="#">LOREM IPSUM 2</a></li>
+                  <p>|</p>
+                  <li><a href="#">LOREM IPSUM 3</a></li>
+               </ul>
+            </nav>
+         </div>
+
+         <!--flick-start-->
+
+         <div class="slideshow" data-flickity='{ "freeScroll": true }'>
+            <!--START-SHOPPING?-->
+            <div class="carousel-cell">
+               <div class="title-holder">
+                  <h1>Redecora la habitación de tu bebé</h1>
+               </div>
+               <button
+                  class="white-button"
+                  type="button"
+                  onclick="alert('*redirect to... start page?*')"
+               >
+                  Empezar
+               </button>
+            </div>
+
+            <!--PROD1-->
+            <div class="carousel-cell">
+               <a href="#">
+                  <img
+                     src="https://raw.githubusercontent.com/DamiMedrano/Shop/main/img_1.png"
+                  />
+               </a>
+
+               <div class="details" id="unhidden">
+                  <span class="name">Alfombra Tigre Hanói </span>
+                  <br />
+                  <span class="price"> 47.99€ </span>
+               </div>
+               <button
+                  class="white-button"
+                  id="hidden"
+                  type="button"
+                  onclick="alert('*redirect to purchase page*')"
+               >
+                  Comprar ahora
+               </button>
+            </div>
+
+            <!--PROD2-->
+            <div class="carousel-cell">
+               <a href="#">
+                  <img
+                     src="https://raw.githubusercontent.com/DamiMedrano/Shop/main/img_2.png"
+                  />
+               </a>
+
+               <div class="details" id="unhidden">
+                  <span class="name">Lampara de Noche Hanói </span>
+                  <br />
+                  <span class="price"> 52.99€ </span>
+               </div>
+               <button
+                  class="white-button"
+                  id="hidden"
+                  type="button"
+                  onclick="alert('*redirect to purchase page*')"
+               >
+                  Comprar ahora
+               </button>
+            </div>
+
+            <!--PROD3-->
+            <div class="carousel-cell">
+               <a href="#">
+                  <img
+                     src="https://raw.githubusercontent.com/DamiMedrano/Shop/main/img_4.png"
+                  />
+               </a>
+
+               <div class="details" id="unhidden">
+                  <span class="name">Alfombra León </span>
+                  <br />
+                  <span class="price"> 55.25€ </span>
+               </div>
+               <button
+                  class="white-button"
+                  id="hidden"
+                  type="button"
+                  onclick="alert('*redirect to purchase page*')"
+               >
+                  Comprar ahora
+               </button>
+            </div>
+
+            <!--PROD4-->
+            <div class="carousel-cell">
+               <a href="#">
+                  <img
+                     src="https://raw.githubusercontent.com/DamiMedrano/Shop/main/img_3.png"
+                  />
+               </a>
+
+               <div class="details" id="unhidden">
+                  <span class="name">Cesta de Peluches </span>
+                  <br />
+                  <span class="price"> 99.99€ </span>
+               </div>
+               <button
+                  class="white-button"
+                  id="hidden"
+                  type="button"
+                  onclick="alert('*redirect to purchase page*')"
+               >
+                  Comprar ahora
+               </button>
+            </div>
+         </div>
+
+         <!--flick-end-->
+
+         <div class="relative-container" id="centered">
+            <div class="page-divider">
+               <hr />
+               <button
+                  class="purple-button"
+                  onclick="alert('*we have a millionaire here!*')"
+               >
+                  COMPRAR TODOS
+               </button>
+            </div>
+         </div>
+
+         <div class="boxes-container" id="centered">
+            <div class="boxes">
+               <div class="video-box">
+                  <video
+                     onclick="checkIfPlaying()"
+                     id="vid"
+                     width="100%"
+                     height="100%"
+                     src="https://cdn.videvo.net/videvo_files/video/free/2018-03/small_watermarked/180301_03_B_CausewayBay_03_preview.webm"
+                  >
+                     Your browser does not support HTML video.
+                  </video>
+                  <button
+                     class="play-button"
+                     id="overlap-video"
+                     type="button"
+                     onclick="checkIfPlaying()"
+                  >
+                     ▶
+                  </button>
+                  <h1 class="vidText" id="overlap-video">
+                     Lorem Ipsum dolor sit
+                  </h1>
+
+                  <button
+                     class="white-button"
+                     id="overlap-video"
+                     onclick="alert('Go to know more page')"
+                  >
+                     Saber más
+                  </button>
+               </div>
+            </div>
+            <div class="boxes">
+               <div class="BuzzFeed-box">
+                  <div class="slideshow-container">
+                     <div class="dots-box">
+                        <span class="dots" onclick="currentSlide(1)"></span>
+                        <span class="dots" onclick="currentSlide(2)"></span>
+                        <span class="dots" onclick="currentSlide(3)"></span>
+                     </div>
+
+                     <div class="mySlides">
+                        <div class="mySlide-content">
+                           <img
+                              src="https://raw.githubusercontent.com/DamiMedrano/Shop/main/img_6.png"
+                              alt="BuzzFeed logo"
+                           />
+                           <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit (1)"
+                           </p>
+                        </div>
+                        <div class="text">LOREM IPSUM - DOLOR SIT AMET 1</div>
+                     </div>
+
+                     <div class="mySlides">
+                        <div class="mySlide-content">
+                           <img
+                              src="https://raw.githubusercontent.com/DamiMedrano/Shop/main/img_6.png"
+                              alt="BuzzFeed logo"
+                           />
+                           <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit (2)"
+                           </p>
+                        </div>
+                        <div class="text">LOREM IPSUM - DOLOR SIT AMET 2</div>
+                     </div>
+
+                     <div class="mySlides">
+                        <div class="mySlide-content">
+                           <img
+                              src="https://raw.githubusercontent.com/DamiMedrano/Shop/main/img_6.png"
+                              alt="BuzzFeed logo"
+                           />
+                           <p>
+                              "Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit (3)"
+                           </p>
+                        </div>
+                        <div class="text">LOREM IPSUM - DOLOR SIT AMET 3</div>
+                     </div>
+
+                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="page-divider"></div>
+
+         <script>
+            /*Video*/
+            var vid = document.getElementById('vid');
+            var isPlaying = false;
+            /*Get the first element with this ID, intended to use the style from the ID on both but only remove the first one (play button) when playing the video, leaving the "Saber más" button available for the user to click*/
+            var x = document.getElementById('overlap-video');
+
+            function checkIfPlaying() {
+               if (isPlaying == false) {
+                  isPlaying = true;
+                  return playVid();
+               } else {
+                  isPlaying = false;
+                  pauseVid();
+               }
+            }
+
+            function playVid() {
+               vid.play();
+               x.style.display = 'none';
+            }
+
+            function pauseVid() {
+               vid.pause();
+               x.style.display = 'block';
+            }
+
+            /*Slide*/
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+               showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+               showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName('mySlides');
+               var dots = document.getElementsByClassName('dots');
+
+               if (n > slides.length) {
+                  slideIndex = 1;
+               }
+               if (n < 1) {
+                  slideIndex = slides.length;
+               }
+               for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = 'none';
+               }
+               for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(' active', '');
+               }
+               slides[slideIndex - 1].style.display = 'block';
+               dots[slideIndex - 1].className += ' active';
+            }
+         </script>
+      </div>
+</body>
+</html>
